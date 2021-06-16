@@ -25,7 +25,7 @@ def demoOfNonThreadSafe():
     
     def remove():
         for i in range(count):
-            l.remove(i)
+            l.remove(i)     # At some point there will nothing to remove because this thread ran ahead of the other thread.
             time.sleep(0.0001)
     
     
